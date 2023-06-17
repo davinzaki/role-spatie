@@ -30,7 +30,7 @@ Route::prefix('admin')->group(function () {
             Route::post('logout', 'logout')->name('logout');
         });
     });
-    
+
     Route::controller(ResetPasswordController::class)->group(function () {
         Route::get('password/reset/{token}', 'showResetForm')->name('showResetForm');
         Route::post('password/reset', 'reset')->name('resetpassword');
@@ -52,5 +52,6 @@ Route::prefix('admin')->group(function () {
 
         require __DIR__ . '/admin/settings.php';
         require __DIR__ . '/admin/audits.php';
+        require __DIR__ . '/admin/student.php';
     });
 });

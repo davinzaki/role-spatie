@@ -52,6 +52,7 @@ class HandleInertiaRequests extends Middleware
             'modules' =>  $activeModules,
             'admin_data' =>  auth()->check() ? auth()->user() : null,
             'admin_role' =>  auth()->check() ? auth()->user()->getRoleNames() : null,
+            'teacher_role' =>  auth()->check() ? auth()->user()->getRoleNames() : null,
         ]);
     }
 }

@@ -21,6 +21,11 @@ class RoleSeeder extends Seeder
                 'permissions' => ['view_general_dashboard', 'view_systems_role_management']
             ],
             [
+                'name' => 'teacher',
+                'is_default' => true,
+                'permissions' => ['view_general_dashboard', 'view_student']
+            ],
+            [
                 'name' => 'user',
                 'is_default' => true,
                 'permissions' => []

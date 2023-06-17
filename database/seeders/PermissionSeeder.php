@@ -46,6 +46,32 @@ class PermissionSeeder extends Seeder
                     ]
                 ]
             ],
+            [
+                'group' => 'core',
+                'sub_group' => [
+                    [
+                        'name' => 'student',
+                        'permission' => [
+                            [
+                                'name' => 'view_student',
+                                'label' => 'View Student',
+                            ],
+                            [
+                                'name' => 'create_student',
+                                'label' => 'Create Student',
+                            ],
+                            [
+                                'name' => 'edit_student',
+                                'label' => 'Edit Student',
+                            ],
+                            [
+                                'name' => 'delete_student',
+                                'label' => 'Delete Student',
+                            ],
+                        ]
+                    ],
+                ]
+            ],
         ];
 
         // Create permissions 
